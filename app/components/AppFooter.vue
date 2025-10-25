@@ -1,6 +1,7 @@
-<script lang="ts">
-</script>
+<script lang="ts"></script>
 
 <template>
+  <UFooter>
     <p>Footer</p>
+  </UFooter>
 </template>

@@ -5,4 +5,5 @@
     </div>
   </UPage>
 </template>
-<script></script>
+<script>
+</script>
