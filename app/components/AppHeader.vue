@@ -13,11 +13,11 @@ const routeList = computed<NavigationMenuItem[]>(() => [
     to: "/projects",
     active: route.path.startsWith("/projects"),
   },
-  // {
-  //   label: 'Blog',
-  //   to: '/blog',
-  //   active: route.path.startsWith("/blog")
-  // }
+  {
+    label: 'Blog',
+    to: '/blog',
+    active: route.path.startsWith("/blog")
+  }
 ]);
 
 </script>
