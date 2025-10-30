@@ -26,14 +26,16 @@ const routeList = computed<NavigationMenuItem[]>(() => [
     <UNavigationMenu :items="routeList" />
 
     <template #right>
-      <UColorModeButton size="xl"/>
+      <UColorModeSwitch size="xl"/>
       <div>
         <ULink
           as="button"
           type="button"
           :to="config.public.GITHUB_PROFILE"
           :external="true"
-          ><Icon name="uil:github" mode="svg" size="2em"/></ULink
+          >
+          <Icon name="uil:github" mode="svg" size="2em"/>
+          </ULink
         >
       </div>
       <div>
@@ -41,7 +43,8 @@ const routeList = computed<NavigationMenuItem[]>(() => [
           as="button"
           :external="true"
           :to="config.public.LINKEDIN_PROFILE"
-          ><Icon name="uil:linkedin" mode="svg" size="2em"/></ULink
+          ><Icon name="uil:linkedin" mode="svg" size="2em"/>
+          </ULink
         >
       </div>
     </template>
