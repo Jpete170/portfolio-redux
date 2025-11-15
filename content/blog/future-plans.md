@@ -16,7 +16,7 @@ I also intend to cover some of my future plans as well, mainly on what project I
 
 ### My Latest Project
 
-My latest project was the 'Film Finder' full stack website, using Nuxt.js for the frontend and FastAPI for Python as the backend server application. A full explanation about that project can be found here at *['Film Finder']('/projects/film-finder')*.
+<!-- My latest project was the 'Film Finder' full stack website, using Nuxt.js for the frontend and FastAPI for Python as the backend server application. A full explanation about that project can be found here at *['Film Finder']('/projects/film-finder')*. -->
 
 But to give a quick rundown, 'Film Finder' is a project that allows a user accessing the frontend nuxt.js app to look up a number of TV Shows and Movies based on the Netflix catalogue.
 

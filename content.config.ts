@@ -10,6 +10,14 @@ export default defineContentConfig({
                 image: z.string().nonempty().editor({input: 'media'}),
             })
         }),
+        projects: defineCollection({
+            type:"page",
+            source: 'projects/*.md',
+            schema: z.object({
+                date: z.date(),
+                image: z.string().nonempty().editor({input: 'media'})
+            })
+        }),
         pages: defineCollection({
             type: 'page',
             schema: z.object({

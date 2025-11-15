@@ -8,13 +8,26 @@
 
       <UPageColumns class="">
         <ULink :to="config.public.GITHUB_PROFILE" :external="true">
-          <UPageCard title="Github" description="A link to my GitHub repository" icon="i-simple-icons-github" />
+          <UPageCard
+            title="Github"
+            description="A link to my GitHub repository"
+            icon="i-simple-icons-github"
+          />
         </ULink>
         <ULink :to="config.public.LINKEDIN_PROFILE" :external="true">
-          <UPageCard title="LinkedIn!" description="A link to my LinkedIn! profile" icon="i-simple-icons-linkedin" />
+          <UPageCard
+            title="LinkedIn!"
+            description="A link to my LinkedIn! profile"
+            icon="i-simple-icons-linkedin"
+          />
         </ULink>
-        
-        <UPageCard>Test for Alignment Purposes</UPageCard>
+        <ULink :to="config.public.TWITTER_PROFILE" :external="true">
+          <UPageCard
+            title="Twitter/X"
+            description="A link to twitter/x profile"
+            icon="i-simple-icons-x"
+          />
+        </ULink>
       </UPageColumns>
     </div>
 
@@ -52,17 +65,19 @@ const config = useRuntimeConfig();
 
 const projects = ref([
   {
-    title: "Test",
+    title: "Film Finder",
     to: "",
     icon: "",
     description: "test",
   },
   {
-    title: "Test2",
+    title: "MERN Project",
+    to: "/projects/mernproject",
     description: "Test2",
   },
   {
-    title: "Test2",
+    title: "Flask Books",
+    to: "/projects/flaskbooks",
     description: "Test2",
   },
 ]);

@@ -25,5 +25,10 @@
     "unstorage": "^1.17.1",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.73",
+    "@iconify-json/simple-icons": "^1.2.58",
+    "@iconify-json/uil": "^1.2.3"
   }
 }

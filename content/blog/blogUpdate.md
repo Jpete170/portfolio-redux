@@ -13,7 +13,7 @@ ogImage:
 - [Website Changes](#websiteChanges)
 - [New Projects](#newProjects)
 
-## A Brief Update <div id="briefUpdate"></div>
+## A Brief Update
 
 Beginning this update. While the time between this post and the previous is not ideal, my personal life has been getting a bit busy, with the end of the University semester fast approach, meaning assessments and work start to pile up, I was also busy applying to graduate positions across several organisations.
 
@@ -21,10 +21,10 @@ When this university semester (at time of writing) is over, a lot more work will
 
 Which leads to the next section...
 
-## Changes to the Website <div id="websiteChanges">
+## Changes to the Website 
 
 The most obvious change to this site is the cosmetic changes in the 'Blog' page, and the addition of a 'Go Back' button to the blog posts, I plan to work on a complete UI / UX overhaul. This will entail actually adding some colour to this website, finally using some other colours than white, black and grey.
 
-## New Projects <div id="newProjects">
+## New Projects 
 
 I haven't been completely idle, I've began work on two projects, a Python-based web scraper, and a JavaScript React app. Both of these projects are in the early stages of their development, so it will be some time before I add them (properly) to my portfolio.

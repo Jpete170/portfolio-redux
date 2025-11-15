@@ -1,35 +1,27 @@
 <script setup lang="ts">
-
-const { data: posts } = await useAsyncData("blogs", () =>
-  queryCollection("blog").order("date", "DESC").all()
+const { data: posts } = await useAsyncData("projects", () =>
+  queryCollection("projects").order("date", "DESC").all()
 );
 if (!posts.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: "blogs posts not found",
+    statusMessage: "projects posts not found",
     fatal: true,
   });
 }
-
-// useSeoMeta({
-//   title: posts.value?.seo?.title || page.value?.title,
-//   ogTitle: page.value?.seo?.title || page.value?.title,
-//   description: page.value?.seo?.description || page.value?.description,
-//   ogDescription: page.value?.seo?.description || page.value?.description,
-// });
+useSeoMeta({});
 </script>
-
 <template>
   <UPage>
     <UPageSection>
-      <div>Blog post page</div>
+      <div>Projects</div>
     </UPageSection>
     <UPageSection
       :ui="{
         container: '!pt-0',
       }"
     >
-      <UBlogPosts orientation="vertical">
+      <UBlogPosts orientation="horizontal">
         <Motion
           v-for="(post, index) in posts"
           :key="index"
@@ -53,7 +45,7 @@ if (!posts.value) {
             }"
           />
         </Motion>
-      </UBlogPosts> 
+      </UBlogPosts>
     </UPageSection>
   </UPage>
 </template>

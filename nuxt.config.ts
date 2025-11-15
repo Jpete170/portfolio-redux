@@ -16,8 +16,16 @@ export default defineNuxtConfig({
     public: {
       GITHUB_PROFILE: "",
       LINKEDIN_PROFILE: "",
+      TWITTER_PROFILE:"",
     },
   },
+nitro:{
+  prerender:{
+    crawlLinks: true,
+    failOnError: false,
+    ignore: ['/pages',]
+  }
+}
   // content:{
     
   // }
