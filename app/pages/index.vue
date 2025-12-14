@@ -66,7 +66,7 @@ const config = useRuntimeConfig();
 const projects = ref([
   {
     title: "Film Finder",
-    to: "",
+    to: "/projects/filmfinder",
     icon: "",
     description: "test",
   },

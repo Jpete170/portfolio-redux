@@ -13,14 +13,19 @@ useSeoMeta({});
 </script>
 <template>
   <UPage>
-    <UPageSection>
-      <div>Projects</div>
-    </UPageSection>
+    <UPageHeader title="Projects">
+      <br />
+      <p>
+        A collection of hobby projects, covering different programming languages
+        and types.
+      </p>
+    </UPageHeader>
     <UPageSection
       :ui="{
         container: '!pt-0',
       }"
     >
+    <br/>
       <UBlogPosts orientation="horizontal">
         <Motion
           v-for="(post, index) in posts"
