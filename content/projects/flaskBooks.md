@@ -1,10 +1,22 @@
 ---
 title: Flask Books
-description: placeholder page for testing
+description: A mimicry of an online book database
 date: 2025-10-26
-image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 ---
 
-# Test Page 
+## Overview 
 
-Random Content
+"JPete Books" is a website built with the Flask micro-framework for Python, and is technically my second side project.
+
+The main purpose behind developing this project was to further expand skills and knowledge related to Python and Flask
+
+## Project Links
+
+- GitHub Repository
+- Website
+
+## How it Functions
+
+The website functions using the [Jinga Templating Engine](https://jinja.palletsprojects.com/en/stable/) for rendering, and the data required being sourced from an SQLite database, using SQLAlchemy / Flask-SQLAlchemy.
+
+

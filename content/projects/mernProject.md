@@ -2,7 +2,7 @@
 title: MERN Project
 description: placeholder page for testing
 date: 2025-10-26
-image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: 
 ---
 
 ## Overview
@@ -20,3 +20,19 @@ The GitHub repositories and API documentation for the project can be found at th
 - Postman Collection
 
 ## Technology Overview
+
+For the frontend UI of this project, I used React (via the `npx create-react-app` command) and Bootstrap for handling CSS.
+
+For the backend stack, I used the following:
+
+- Express.JS, for the main server framework
+- MongoDB, for handing database operations and providing data
+- Auth0, for handling API authentication tasks
+
+### Web Hosting
+
+Currently, the react app is hosted on Vercel, however, the backend express server is currently offline, due to Heroku shutting down
+
+## API Testing and Documentation
+
+The Listings Finder API was built on REST principles, since I found using that for the API was easier and quicker to get working then using a GraphQL client and being concerned with MongoDB data compatibility.

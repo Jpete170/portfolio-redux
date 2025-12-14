@@ -68,17 +68,17 @@ const projects = ref([
     title: "Film Finder",
     to: "/projects/filmfinder",
     icon: "",
-    description: "test",
+    description: "A small project covering movies and tv shwos",
   },
   {
-    title: "MERN Project",
+    title: "Listings Finder",
     to: "/projects/mernproject",
-    description: "Test2",
+    description: "A site to discover various property listings",
   },
   {
     title: "Flask Books",
     to: "/projects/flaskbooks",
-    description: "Test2",
+    description: "A project mimicking a library database",
   },
 ]);
 
