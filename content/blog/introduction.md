@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-excerpt: 'An introduction to the purpose of this website and what my plans are for it.'
+description: 'An introduction to the purpose of this website and what my plans are for it.'
 date: '2021-07-13T05:35:07.322Z'
 author:
     name: Jackson Peters
@@ -8,6 +8,7 @@ author:
 ogImage:
     url: ''
 ---
+
 Hello, and welcome to my website, and my blog. Getting right into it, this first blog post will cover:
 
 - **[About Me](#aboutMe)**

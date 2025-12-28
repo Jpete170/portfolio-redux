@@ -1,6 +1,6 @@
 ---
 title: "Listings Finder | MERN Stack Project"
-excerpt: 'An overview of the Listings Finder Project that I have created using the MERN technology stack.'
+description: 'An overview of the Listings Finder Project that I have created using the MERN technology stack.'
 date: '2022-03-04T05:35:07.322Z'
 author:
     name: Jackson Peters

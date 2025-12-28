@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const { data: posts } = await useAsyncData("blogs", () =>
   queryCollection("blog").order("date", "DESC").all()
 );
@@ -21,10 +20,15 @@ if (!posts.value) {
 
 <template>
   <UPage>
-    <UPageSection>
-      <div>Blog post page</div>
-    </UPageSection>
+    <UPageHeader title="Blog Posts" />
+    <div class="p-5">
+      <p>
+        A collection of blog posts covering basically anything related to the
+        projects I've completed
+      </p>
+    </div>
     <UPageSection
+      class="p-4"
       :ui="{
         container: '!pt-0',
       }"
@@ -39,6 +43,7 @@ if (!posts.value) {
           :in-view-options="{ once: true }"
         >
           <UBlogPost
+            class="p-2"
             orientation="horizontal"
             :to="post.path"
             v-bind="post"
@@ -53,7 +58,7 @@ if (!posts.value) {
             }"
           />
         </Motion>
-      </UBlogPosts> 
+      </UBlogPosts>
     </UPageSection>
   </UPage>
 </template>

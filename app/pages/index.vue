@@ -1,11 +1,13 @@
 <template>
   <UPage>
     <div>
-      <div class="text-center p-5">
-        General page introduction, will include links to Github and Linked In
-        profiles here
+      <div class="text-justify p-5">
+        <p class="text-center text-3xl underline p-0.5">Welcome to JacksonPeters.dev</p>
+            <p>This is my portfolio site where I showcase and detail the programming projects that I work on in my spare time.</p>
+            <p>My overall goal is to learn a variety of programming languages covering a variety of topics.</p>
+            <p>Currently, my main focus is on learning various web development technologies, such as Flask for Python, Next.JS and React.</p>
+            <p>Each time I'll undertake learning a new programming language, I'll endeavour to develop a publicly viewable project in my GitHub profile, as well as providing some documentation on this website.</p>
       </div>
-
       <UPageColumns class="">
         <ULink :to="config.public.GITHUB_PROFILE" :external="true">
           <UPageCard
@@ -32,10 +34,9 @@
     </div>
 
     <UPage>
-      <UPageHeader class="text-center">Project Section</UPageHeader>
-      <div class="p-4">Checkout a collection of my projects below</div>
+      <UPageHeader class="text-center" title="Projects" />
+      <div class="p-4">Checkout a collection of my projects below, alternatively, checkout the Projects page for all of my projects</div>
 
-      <!-- <UPageSection :features="projects"> </UPageSection> -->
       <UPageGrid>
         <UPageCard
           v-for="(project, index) in projects"
@@ -46,9 +47,9 @@
       </UPageGrid>
     </UPage>
 
-    <UPageSection>
-      <UPageHeader class="text-center">Blog Section</UPageHeader>
-      Check out the latest blog posts below
+    <UPage>
+      <UPageHeader class="text-center" title="Blog" />
+      <div class="p-4">Check out the latest blog posts below</div>
       <UBlogPosts>
         <UBlogPost
           v-for="(post, index) in posts"
@@ -57,7 +58,7 @@
           :to="post.path"
         />
       </UBlogPosts>
-    </UPageSection>
+    </UPage>
   </UPage>
 </template>
 <script setup lang="ts">

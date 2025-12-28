@@ -1,6 +1,6 @@
 ---
 title: "Website Update"
-excerpt: 'An overview of the changes made to this website at the time of this post'
+description: 'An overview of the changes made to this website at the time of this post'
 date: '2021-09-20T05:35:07.322Z'
 author:
     name: 'Jackson Peters'

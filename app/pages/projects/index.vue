@@ -36,6 +36,7 @@ useSeoMeta({});
           :in-view-options="{ once: true }"
         >
           <UBlogPost
+          class="p-3"
             orientation="horizontal"
             :to="post.path"
             v-bind="post"

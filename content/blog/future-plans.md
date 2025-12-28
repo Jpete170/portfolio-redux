@@ -1,6 +1,6 @@
 ---
 title: "Latest Project & Future Plans"
-excerpt: 'A blog post covering my latest project and what future projects I have planned'
+description: 'A blog post covering my latest project and what future projects I have planned'
 coverImage: '/logo.svg'
 date: '2022-05-12T05:35:07.322Z'
 author:
