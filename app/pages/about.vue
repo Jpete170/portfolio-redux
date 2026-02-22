@@ -11,10 +11,14 @@
     <UPageHeader title="Education" />
     <UPageBody>
       <div>
-        <p>
+        <p>A collection of certifications that I've gained</p>
+      </div>
+      <div>
+        <p class="text-2xl">
           Bachelors of Information Technology, Queensland University of
           Technology. 2018-2023
         </p>
+        <p>This degree is the basis</p>
       </div>
       <div>
         <p>
@@ -28,7 +32,7 @@
     <div class="p-1">
       <p class="text-2xl pb-1">Programming Languages</p>
     <p>I have used various programming languages, with a majority relating to web development.</p>
-    <p>In order of most experience to least:</p>
+    <p>In no relevant order:</p>
     <ul class="list-disc list-inside">
         <li>JavaScript</li>
         <div class="px-10">
@@ -41,6 +45,12 @@
         <li>Python</li>
         <div class="px-10">
             <li>Flask framework</li>
+            <li>FastAPI</li>
+        </div>
+        <li>Golang</li>
+        <li>Java</li>
+        <div class="px-10">
+          <li>Springboot</li>
         </div>
     </ul>
     

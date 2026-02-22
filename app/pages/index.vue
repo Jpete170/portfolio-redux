@@ -5,7 +5,6 @@
         <p class="text-center text-3xl underline p-0.5">Welcome to JacksonPeters.dev</p>
             <p>This is my portfolio site where I showcase and detail the programming projects that I work on in my spare time.</p>
             <p>My overall goal is to learn a variety of programming languages covering a variety of topics.</p>
-            <p>Currently, my main focus is on learning various web development technologies, such as Flask for Python, Next.JS and React.</p>
             <p>Each time I'll undertake learning a new programming language, I'll endeavour to develop a publicly viewable project in my GitHub profile, as well as providing some documentation on this website.</p>
       </div>
       <UPageColumns class="">
