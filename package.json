@@ -16,7 +16,7 @@
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "@unhead/vue": "^2.0.19",
+    "@unhead/vue": "^2.1.12",
     "better-sqlite3": "^12.4.1",
     "motion-v": "^1.7.4",
     "nuxt": "^4.1.3",
