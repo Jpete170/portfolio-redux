@@ -19,7 +19,7 @@
     "@unhead/vue": "^2.0.19",
     "better-sqlite3": "^12.4.1",
     "motion-v": "^1.7.4",
-    "nuxt": "^4.1.3",
+    "nuxt": "^4.4.6",
     "nuxt-og-image": "^5.1.12",
     "reka-ui": "^2.6.0",
     "unstorage": "^1.17.1",
