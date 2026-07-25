@@ -1,25 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import tailwindcss from "@tailwindcss/vite"
+// import tailwindcss from "@tailwindcss/vite"
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+  future:{
+    compatibilityVersion: 4
+  },
   devtools: { enabled: true },
   modules: [
+    "@nuxt/eslint",
     "@nuxt/ui",
     "@nuxt/content",
     "@nuxt/image",
     "nuxt-og-image",
     "motion-v/nuxt",
   ],
-  features:{
-    inlineStyles: true
-  },
   icon: {
     clientBundle: {
       scan: true,
       sizeLimitKb: 512,
     }
   },
-  css: ["~/assets/css/main.css"],
+  css: [
+    "~/assets/css/main.css"
+  ],
   runtimeConfig: {
     public: {
       GITHUB_PROFILE: "",
@@ -29,14 +32,17 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      crawlLinks: true,
-      failOnError: false,
-      ignore: ['/pages',]
+      crawlLinks: false,
+      // failOnError: false,
+      ignore: ['/__nuxt_content/pages/sql_dump.txt',]
     }
   },
-  vite:{
-    plugins:[
-      tailwindcss(),
-    ]
-  }
+  // vite:{
+  //   plugins:[
+  //     tailwindcss(),
+  //   ],
+  //   build:{
+  //     cssCodeSplit: false
+  //   }
+  // }
 });
