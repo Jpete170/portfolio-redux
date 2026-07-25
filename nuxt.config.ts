@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/ui",
     "@nuxt/content",
-    // "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "nuxt-og-image",
     "motion-v/nuxt"
@@ -16,17 +15,20 @@ export default defineNuxtConfig({
     public: {
       GITHUB_PROFILE: "",
       LINKEDIN_PROFILE: "",
-      TWITTER_PROFILE:"",
+      TWITTER_PROFILE: "",
     },
   },
-nitro:{
-  prerender:{
-    crawlLinks: true,
-    failOnError: false,
-    ignore: ['/pages',]
-  }
-}
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+      ignore: ['/pages',]
+    }
+  },
+  // tailwindcss: {
+  //   configPath: './tailwind.config.ts'
+  // }
   // content:{
-    
+
   // }
 });
