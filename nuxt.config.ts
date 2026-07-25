@@ -9,13 +9,19 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "motion-v/nuxt"
   ],
-  icon:{
-    clientBundle : {
+  icon: {
+    clientBundle: {
       scan: true,
       sizeLimitKb: 512,
     }
   },
   css: ["~/assets/css/main.css"],
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+      autoprefixer: {}
+    }
+  },
   runtimeConfig: {
     public: {
       GITHUB_PROFILE: "",
