@@ -43,6 +43,8 @@
   </UPage>
 </template>
 <script setup lang="ts">
+const config = useRuntimeConfig();
+
 const projects = ref([
   {
     title: "Film Finder",
@@ -62,11 +64,10 @@ const projects = ref([
   },
 ]);
 
-const { data: posts } = await useAsyncData("blogs", () => {
-  return queryCollection("blog").order("date", "DESC").limit(3).all()
-}
+const { data: posts } = await useAsyncData("blogs", () => 
+  { return queryCollection("blog").order("date", "DESC").limit(3).all()}
 );
-if (!posts) {
+if (!posts.value) {
   throw createError({
     statusCode: 404,
     statusMessage: "blogs posts not found",
