@@ -3,13 +3,18 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   modules: [
-    "@nuxt/icon",
     "@nuxt/ui",
     "@nuxt/content",
     "@nuxt/image",
     "nuxt-og-image",
     "motion-v/nuxt"
   ],
+  icon:{
+    clientBundle : {
+      scan: true,
+      sizeLimitKb: 512,
+    }
+  },
   css: ["~/assets/css/main.css"],
   runtimeConfig: {
     public: {
@@ -25,9 +30,6 @@ export default defineNuxtConfig({
       ignore: ['/pages',]
     }
   },
-  // tailwindcss: {
-  //   configPath: './tailwind.config.ts'
-  // }
   // content:{
 
   // }
