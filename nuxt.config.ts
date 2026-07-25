@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite"
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -16,12 +17,6 @@ export default defineNuxtConfig({
     }
   },
   css: ["~/assets/css/main.css"],
-  postcss: {
-    plugins: {
-      '@tailwindcss/postcss': {},
-      autoprefixer: {}
-    }
-  },
   runtimeConfig: {
     public: {
       GITHUB_PROFILE: "",
@@ -36,7 +31,9 @@ export default defineNuxtConfig({
       ignore: ['/pages',]
     }
   },
-  // content:{
-
-  // }
+  vite:{
+    plugins:[
+      tailwindcss(),
+    ]
+  }
 });
