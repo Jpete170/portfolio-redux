@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "nuxt-og-image",
-    "motion-v/nuxt"
+    "motion-v/nuxt",
   ],
   icon: {
     clientBundle: {

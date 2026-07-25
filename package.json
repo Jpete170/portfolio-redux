@@ -15,6 +15,7 @@
     "@nuxt/icon": "^2.1.0",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^4.10.0",
+    "@tailwindcss/vite": "^4.3.3",
     "@tiptap/y-tiptap": "3.0.7",
     "@unhead/vue": "^2.0.19",
     "better-sqlite3": "^12.11.1",
