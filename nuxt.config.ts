@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "motion-v/nuxt",
   ],
+  features:{
+    inlineStyles: true
+  },
   icon: {
     clientBundle: {
       scan: true,
