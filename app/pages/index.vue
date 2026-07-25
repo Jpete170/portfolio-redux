@@ -49,14 +49,14 @@
     <UPage>
       <UPageHeader class="text-center" title="Blog" />
       <div class="p-4">Check out the latest blog posts below</div>
-      <!-- <UBlogPosts>
+      <UBlogPosts>
         <UBlogPost
           v-for="(post, index) in posts"
           :key="index"
           v-bind="post"
           :to="post.path"
         />
-      </UBlogPosts> -->
+      </UBlogPosts>
     </UPage>
   </UPage>
 </template>
@@ -82,14 +82,14 @@ const projects = ref([
   },
 ]);
 
-// const { data: posts } = await useAsyncData("blogs", () =>
-//   queryCollection("blog").order("date", "DESC").limit(3).all()
-// );
-// if (!posts.value) {
-//   throw createError({
-//     statusCode: 404,
-//     statusMessage: "blogs posts not found",
-//     fatal: true,
-//   });
-// }
+const { data: posts } = await useAsyncData("blogs", () =>
+  queryCollection("blog").order("date", "DESC").limit(3).all()
+);
+if (!posts.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "blogs posts not found",
+    fatal: true,
+  });
+}
 </script>
